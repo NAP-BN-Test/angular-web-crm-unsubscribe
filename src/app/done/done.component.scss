@@ -1,0 +1,26 @@
+.center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.m-container {
+    height: -webkit-fill-available; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.m-success {
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.m-unsub {
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+}

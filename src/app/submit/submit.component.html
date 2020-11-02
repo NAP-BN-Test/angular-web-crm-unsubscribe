@@ -1,0 +1,26 @@
+<div class="m-container">
+    <div style="margin-bottom: 100px;">
+        <div class="center" style="height: 150px; margin-bottom: 16px;">
+            <img style="height: 100%;" src="../../assets/img/logo1.png" alt="">
+        </div>
+        <div class="m-email" *ngIf="email">{{email}}</div>
+        <div class="m-unsub">Unsubscribe from our mailing list</div>
+        <div class="m-help">To help us improve our services, we would be grateful if you could tell us why:</div>
+
+        <form id="nameform">
+            <select style="width: 100%; padding: 8px; margin-top: 16px;" (change)="onChange($event)" placeholder="Please select reason">
+                <option *ngFor="let item of listReson" [value]="item.id">{{item.name}}</option>
+            </select>
+
+            <textarea [hidden]="resonIndex!=5" style="width: 100%; padding: 0 !important; margin-top: 16px;" rows="4" cols="50" (change)="onReasonChange($event)"></textarea>
+        </form>
+
+
+        <div class="center">
+            <button class="m-btn" type="button" (click)="onClickSubmit()">Submit</button>
+        </div>
+
+    </div>
+
+
+</div>
